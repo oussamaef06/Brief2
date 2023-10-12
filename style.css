@@ -25,9 +25,36 @@ a {
     text-decoration: none;
 }
 
+/* Add a cool hover effect to the navigation links */
 .navigation a {
-    margin-right: 20px; /* Add right margin between the navigation links */
+    margin-right: 20px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #557908; /* Color for the underline effect */
+    transform: scaleX(0); /* Initially, no width */
+    transform-origin: 50%;
+    transition: transform 0.3s;
+}
+
+.navigation a:hover {
+    color: #557908; /* Change text color on hover */
+}
+
+.navigation a:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+}
+
 
 .logo {
     max-width: 150px; /* Adjust the maximum width to your preference */
