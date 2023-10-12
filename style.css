@@ -1,264 +1,397 @@
 * {
     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     scroll-behavior: smooth;
- }
- 
- body {
-     background: #F3FFF1;
-     font-family: 'Poppins', sans-serif;
- }
- 
- header {
-     width: 100%;
-     position: fixed;
-     z-index: 999;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 25px 200px;
-     background-color: #F3FFF1;
- }
- 
- a {
-     color: black;
-     text-decoration: none;
- }
- 
- .navigation a {
-     margin-right: 20px; /* Add right margin between the navigation links */
- }
- 
- .logo {
-     max-width: 150px; /* Adjust the maximum width to your preference */
-     height: auto;
- }
- 
- /* Add media queries for responsive logo size adjustments */
- @media (max-width: 768px) {
-     .navbar-logo {
-         justify-content: center;
-     }
- 
-     .logo {
-         max-width: 70px; /* Adjust the logo size for smaller screens */
-     }
- 
-     .logo-black {
-         display: block;
-     }
- }
- 
- @media (max-width: 576px) {
-     .logo {
-         max-width: 50px; /* Further adjust the logo size for even smaller screens */
-     }
- }
- 
- section {
-     padding: 100px 200px;
- }
- 
- .main {
-     width: 100%;
-     min-height: 100vh;
-     display: flex;
-     align-items: center;
-     background-color: transparent; /* Make the navbar background transparent */
- }
- 
- .main h2 {
-     text-decoration: none;
-     font: 1em sans-serif;
-     color: rgb(0, 0, 0);
-     font-size: 2.8em;
-     white-space: nowrap; /* Prevent text from wrapping to a new line */
-     font-weight: 600; /* Set the font weight to 600 for semi-bold */
- }
- 
- .main-btn {
-     text-decoration: none;
-     font: 1em sans-serif;
-     color: white;
-     font-size: 1.0em;
-     font-size: 15px;
-     background-color: #557908;
-     display: inline-block;
-     padding: 1em;
-     border-radius: 20px;
-     margin-top: 10px;
-     font-weight: 600; /* Set the font weight to 600 for semi-bold */
- }
- 
- .img1 {
-     margin-left: 400px; /* Move the image to the right */
- 
- }
- 
- .about {
-     background-color: white;
-     padding: 100px 0;
-     text-align: center;
- }
- 
- .about-content {
-     max-width: 1200px;
-     margin: 0 auto;
- }
- 
- .about h3 {
-     font-size: 2em;
-     font-weight: 600;
-     padding-bottom: 20px;
-     margin-bottom: 20px;
- }
- 
- .circle {
-     display: inline-block;
-     width: 300px; /* Increase the width of the circles */
-     text-align: center;
-     margin: 20px; /* Increase the margin between the circles */
- }
- 
- .circle img {
-     border-radius: 50%;
-     width: 250px;
-     height: 250px;
-     object-fit: cover;
-     margin: 0 auto;
- }
- 
- .circle h4 {
-     font-size: 1.5em; /* Increase the font size for h4 */
-     margin-top: 20px; /* Add spacing between h4 and the image */
- }
- 
- .circle p {
-     margin-top: 20px; /* Increase the margin between the text and the image */
-     font-size: 1.2em;
- }
- 
- .partners {
-     background-color: #F3FFF1;
-     padding: 100px 0;
-     text-align: center;
- }
- 
- .partners-content {
-     max-width: 1200px;
-     margin: 0 auto;
- }
- 
- .partners h3 {
-     font-size: 2em;
-     font-weight: 600;
- }
- 
- .partner-logos {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
- }
- 
- .partner-logos img {
-     width: 150px; /* Set the size of the partner logos */
-     margin: 10px 25px; /* Adjust the margin to create more space between logos */
- }
- 
- .feedback {
-     background-color: white; /* Change the background color to white */
-     padding: 100px 0;
-     text-align: center;
- }
- 
- .feedback h3 {
-     font-size: 2em;
-     font-weight: 600;
- }
- 
- .feedback-cards {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
- 
- .card {
-     flex: 0 0 calc(33.33% - 20px); /* Each card occupies 33.33% of the container width */
-     width: 150px; /* Specific width */
-     height: 100px; /* Specific height */
-     background-color: #000;
-     color: #fff;
-     border-radius: 30px; /* Specific border radius */
-     padding: 20px;
-     text-align: center;
-     margin: 10px; /* Add margin to separate the cards */
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     transition: transform 0.2s, box-shadow 0.2s;
- }
- 
- .card:hover {
-     transform: translateY(-5px);
-     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
- }
- 
- .card p {
-     font-size: 1.2em;
-     line-height: 1.0;
- }
- 
- .card h4 {
-     font-size: 1.5em;
-     margin-top: 10px;
- }
- 
- footer {
-     background-color: #F3FFF1;
-     color: #000; /* Change text color to black */
-     padding: 40px 0;
-     text-align: center;
- }
- 
- .footer-logo {
-     max-width: 100px; /* Adjust the maximum width of the logo */
-     display: block; /* Center the logo horizontally */
-     margin: 0 auto; /* Center the logo horizontally */
- }
- 
- .footer-columns {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
- 
- .footer-column {
-     flex: 1;
-     margin: 10px;
-     text-align: center;
- }
- 
- .footer-section {
-     border-top: 1px solid #000; /* Add a single horizontal line at the top of each column */
-     padding: 20px 0; /* Add padding to space out the content */
- }
- 
- .footer-section a {
-     text-decoration: none;
-     color: #000; /* Text color for the links */
-     display: block;
-     margin-bottom: 10px; /* Space between the links */
-     font-size: 1.2em;
- }
- 
- .social-icons {
-     margin-top: 20px;
- }
- 
- .social-icon {
-     display: inline-block;
-     margin: 0 10px;
-     color: #000; /* Text color for social icons */
-     text-decoration: none;
-     font-size: 1.2em;
- }
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F3FFF1;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 200px;
+    background-color: #F3FFF1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation a {
+    margin-right: 20px; /* Add right margin between the navigation links */
+}
+
+.logo {
+    max-width: 150px; /* Adjust the maximum width to your preference */
+    height: auto;
+}
+
+/* Add media queries for responsive logo size adjustments */
+@media (max-width: 768px) {
+    .navbar-logo {
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: 70px; /* Adjust the logo size for smaller screens */
+    }
+
+    .logo-black {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 50px; /* Further adjust the logo size for even smaller screens */
+    }
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Make the navbar background transparent */
+}
+
+.main h2 {
+    text-decoration: none;
+    font: 1em sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2.8em;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    font-weight: 600; /* Set the font weight to 600 for semi-bold */
+}
+
+.main-btn {
+    text-decoration: none;
+    font: 1em sans-serif;
+    color: white;
+    font-size: 1.0em;
+    font-size: 15px;
+    background-color: #557908;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: 600; /* Set the font weight to 600 for semi-bold */
+}
+
+.img1 {
+    margin-left: 400px; /* Move the image to the right */
+
+}
+
+.about {
+    background-color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h3 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    display: inline-block;
+    width: 300px; /* Increase the width of the circles */
+    text-align: center;
+    margin: 20px; /* Increase the margin between the circles */
+}
+
+.circle img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.circle h4 {
+    font-size: 1.5em; /* Increase the font size for h4 */
+    margin-top: 20px; /* Add spacing between h4 and the image */
+}
+
+.circle p {
+    margin-top: 20px; /* Increase the margin between the text and the image */
+    font-size: 1.2em;
+}
+
+.partners {
+    background-color: #F3FFF1;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.partners-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partners h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    width: 150px; /* Set the size of the partner logos */
+    margin: 10px 25px; /* Adjust the margin to create more space between logos */
+}
+
+.feedback {
+    background-color: white; /* Change the background color to white */
+    padding: 50px 0 100px; /* Add more padding above the canvas */
+    text-align: center;
+}
+
+.feedback h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.feedback-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainD{
+    margin: 40px 60px 40px 60px;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* Each card occupies 33.33% of the container width */
+    width: 200px; /* Make the cards wider for a square-like appearance */
+    height: 200px; /* Set a specific height to match the width */
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px; /* Specific border radius */
+    padding: 20px;
+    text-align: center;
+    margin: 10px; /* Add margin to separate the cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    font-size: 1.2em;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.card h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #F3FFF1;
+    color: #000; /* Change text color to black */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust the maximum width of the logo */
+    display: block; /* Center the logo horizontally */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-section {
+    border-top: 1px solid #000; /* Add a single horizontal line at the top of each column */
+    padding: 20px 0; /* Add padding to space out the content */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #000; /* Text color for the links */
+    display: block;
+    margin-bottom: 10px; /* Space between the links */
+    font-size: 1.2em;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #000; /* Text color for social icons */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/*.blog {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog h3 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 140px;
+}
+
+.blog p {
+    font-size: 1.2em;
+}
+
+.p1-olivier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.img2 {
+    width: 35%;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.p2-olivier{
+text-align: left;
+margin-left: 200px;
+margin-right: 200px;
+line-height: 1.6;
+}*/
+
+.blog {
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.blog h3 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 140px;
+    color: #3e3e3e; /* Change the text color */
+}
+
+.blog p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: #545454; /* Adjust the text color */
+}
+
+.p1-olivier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 350px; /* Adjust margins for better alignment */
+    margin-right: 350px;
+}
+
+.img2 {
+    width: 35%; /* Increase image width for a better visual impact */
+    margin: 20px 0;
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+
+.p2-olivier {
+    text-align: left;
+    margin-left: 200px; /* Adjust margins for better readability */
+    margin-right: 200px;
+    line-height: 1.6;
+    color: #3e3e3e; /* Adjust text color */
+}
+
+/* Add hover effect to images for better interactivity */
+.img2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Style links within the text */
+.p2-olivier a {
+    text-decoration: underline; /* Underline links for better visibility */
+    color: #4d88ff; /* Change link color */
+}
+
+/* Apply styles to headings within the text */
+.p2-olivier h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #3e3e3e;
+}
+
+/* Add a border and padding to quotes within the text */
+.p2-olivier blockquote {
+    border-left: 4px solid #4d88ff;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+/* Style strong text within the text */
+.p2-olivier strong {
+    font-weight: 600;
+    color: #3e3e3e;
+}
+
+/* Add a background color and padding to code blocks within the text */
+.p2-olivier code {
+    background-color: #f2f2f2;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
