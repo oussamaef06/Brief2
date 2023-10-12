@@ -6,7 +6,6 @@
 }
 
 body {
-    background: #F3FFF1;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -61,6 +60,10 @@ section {
 }
 
 .main {
+    background: url("img/olive\ bg2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -71,10 +74,10 @@ section {
 .main h2 {
     text-decoration: none;
     font: 1em sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 2.8em;
-    white-space: nowrap; /* Prevent text from wrapping to a new line */
-    font-weight: 600; /* Set the font weight to 600 for semi-bold */
+    white-space: nowrap; 
+    font-weight: 600; 
 }
 
 .main-btn {
@@ -88,7 +91,8 @@ section {
     padding: 1em;
     border-radius: 20px;
     margin-top: 10px;
-    font-weight: 600; /* Set the font weight to 600 for semi-bold */
+    font-weight: 600; 
+    cursor: pointer;
 }
 
 .img1 {
@@ -267,45 +271,6 @@ footer {
     font-size: 1.2em;
 }
 
-/*.blog {
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.blog h3 {
-    font-size: 2em;
-    font-weight: 600;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    margin-top: 140px;
-}
-
-.blog p {
-    font-size: 1.2em;
-}
-
-.p1-olivier{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-left: 400px;
-    margin-right: 400px;
-}
-
-.img2 {
-    width: 35%;
-    margin: 20px 0;
-    border-radius: 20px;
-}
-
-.p2-olivier{
-text-align: left;
-margin-left: 200px;
-margin-right: 200px;
-line-height: 1.6;
-}*/
 
 .blog {
     background-color: #f6f6f6;
@@ -319,7 +284,7 @@ line-height: 1.6;
     padding-bottom: 20px;
     margin-bottom: 20px;
     margin-top: 140px;
-    color: #3e3e3e; /* Change the text color */
+    color: #000000; 
 }
 
 .blog p {
@@ -353,19 +318,16 @@ line-height: 1.6;
     color: #3e3e3e; /* Adjust text color */
 }
 
-/* Add hover effect to images for better interactivity */
 .img2:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
 
-/* Style links within the text */
 .p2-olivier a {
     text-decoration: underline; /* Underline links for better visibility */
     color: #4d88ff; /* Change link color */
 }
 
-/* Apply styles to headings within the text */
 .p2-olivier h2 {
     font-size: 1.8em;
     font-weight: 600;
@@ -373,7 +335,6 @@ line-height: 1.6;
     color: #3e3e3e;
 }
 
-/* Add a border and padding to quotes within the text */
 .p2-olivier blockquote {
     border-left: 4px solid #4d88ff;
     background-color: #f2f2f2;
@@ -381,17 +342,71 @@ line-height: 1.6;
     margin: 20px 0;
 }
 
-/* Style strong text within the text */
 .p2-olivier strong {
     font-weight: 600;
     color: #3e3e3e;
 }
 
-/* Add a background color and padding to code blocks within the text */
 .p2-olivier code {
     background-color: #f2f2f2;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Courier New', monospace;
+}
+
+.livre {
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.livre h3 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 140px;
+    color: #000000;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjusted column size for consistent cards */
+    gap: 30px; /* Add gap between book cards */
+    justify-items: center;
+}
+
+
+
+.book-cover {
+    max-width: 30%;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.book-price {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #666;
+}
+
+.buy-button {
+    background-color: #557908;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #3e3e3e;
 }
 
